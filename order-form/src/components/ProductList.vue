@@ -23,7 +23,12 @@
           <td>
             <input v-model="item.quantity" placeholder="wprowadź ilość">
           </td>
-          <td><button @click="removeItem(index)">Usuń</button></td>
+          <!-- <td><button @click="removeItem(index)">Usuń</button></td> -->
+          <td>
+            <click-confirm :messages="{title: 'Czy chcesz usunąć ten element?', yes: 'Tak', no: 'Nie'}">
+              <button class="btn btn-primary" @click="removeItem(index)">Usuń</button>
+            </click-confirm>
+          </td>
         </tr>
         <tr>
           <td><img class="product_miniature" src="../assets/example_miniature.png"></td>

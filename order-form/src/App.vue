@@ -7,11 +7,13 @@
 
 <script>
 import ProductList from './components/ProductList'
+import ClickConfirm from 'click-confirm'
 
 export default {
   name: 'App',
   components: {
-    ProductList
+    ProductList,
+    ClickConfirm
   }
 }
 </script>
