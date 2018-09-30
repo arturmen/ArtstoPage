@@ -1,0 +1,60 @@
+{
+    "content": {
+        "categories": [
+            "Młynki do kawy",
+            "Młynki do pieprzu",
+            "Kasetki na herbatę"
+        ],
+        "products": [
+            {
+                "name": "Młynek Retro",
+                "name-short": "Młynek Retro",
+                "category": "Młynki do kawy",
+                "description-long": "Dlug opis",
+                "description-short": "Krotki opis",
+                "images": {
+                    "main": "test.jpg",
+                    "all": [
+                        "test2.jpg",
+                        "test.jpg"
+                    ],
+                },
+                "materials": {
+                    "wood": [
+                        "Czerwony",
+                        "Zielony"
+                    ],
+                    "metal": [
+                        "Czarny",
+                        "Złoty"
+                    ],
+                    "ceramics": [
+                        "A1",
+                        "A15",
+                        "K2",
+                        "K8"
+                    ]
+                }
+            }
+        ],
+        "materials_wood": {
+            "Czerwony": {
+                "name": "Czerwony",
+                "thumbnail": "colors/wood/red.jpg"
+            },
+        },
+        "materials_metal": {
+            "Czarny": {
+                "name": "Czarny",
+                "thumbnail": "colors/metal/black.jpg"
+            },
+        },
+        "materials_ceramic": {
+            "A1": {
+                "name": "Ceramika A1",
+                "thumbnail": "colors/ceramics/black.jpg",
+                "origin": "Bolesławiec"
+            },
+        },
+    }
+}
