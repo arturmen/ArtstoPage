@@ -52,7 +52,12 @@
         "materials_ceramic": {
             "A1": {
                 "name": "Ceramika A1",
-                "thumbnail": "colors/ceramics/black.jpg",
+                "thumbnail": "images/materials/ceramics/a1.jpg",
+                "origin": "Bolesławiec"
+            },
+            "A2": {
+                "name": "Ceramika A2",
+                "thumbnail": "images/materials/ceramics/a2.jpg",
                 "origin": "Bolesławiec"
             }
         }
