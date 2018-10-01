@@ -146,6 +146,28 @@
                     "origin": "Bolesławiec"
                 }
             }
-        }
+        },
+        "clients": [
+            {
+                "name": "Herbaty Świata",
+                "logo": "images/clients/logo_herbaty_swiata.jpg"
+            },
+            {
+                "name": "Alma",
+                "logo": "images/clients/logo_alma.jpg"
+            },
+            {
+                "name": "Piotr i Paweł",
+                "logo": "images/clients/logo_piotr_i_pawel.jpg"
+            },
+            {
+                "name": "Oxalis",
+                "logo": "images/clients/logo_oxalis.png"
+            },
+            {
+                "name": "Nalewki Staropolskie",
+                "logo": "images/clients/logo_nalewki_staropolskie.jpeg"
+            }
+        ]
     }
 }

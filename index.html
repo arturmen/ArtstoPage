@@ -431,18 +431,19 @@
 						</div>
 
 						<!-- TODO FIXME center it -->
-						<div class="container topmargin-lg clearfix">
-							<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 25px;">Nasi klienci</h2>
-							<div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80" data-loop="true"
-							 data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4"
-							 data-items-lg="5" data-items-xl="6">
-								<div class="oc-item"><a href="#"><img src="images/clients/logo_herbaty_swiata.jpg" alt="Alma"></a></div>
-								<div class="oc-item"><a href="#"><img src="images/clients/logo_alma.jpg" alt="Alma"></a></div>
-								<div class="oc-item"><a href="#"><img src="images/clients/logo_piotr_i_pawel.jpg" alt="Piotr i Paweł"></a></div>
-								<div class="oc-item"><a href="#"><img src="images/clients/logo_oxalis.png" alt="Oxalis"></a></div>
-								<div class="oc-item"><a href="#"><img src="images/clients/logo_nalewki_staropolskie.jpeg" alt="Nalewki Staropolskie"></a></div>
-							</div>
+						<div class="container topmargin-lg clearfix" id="target-client-list">
 						</div>
+
+						<script type="text/template" id="template-client-list">
+							<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 25px;">Nasi klienci</h2>
+							<div class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80"
+							 data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3"
+							 data-items-md="4" data-items-lg="5" data-items-xl="6">
+								{{#items}}
+								<div class="oc-item"><a href="#"><img src="{{logo}}" alt="{{name}}"></a></div>
+								{{/items}}
+							</div>
+						</script>
 
 					</div>
 
@@ -696,6 +697,7 @@
 			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood));
 			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics));
 			renderList('#template-metal-list', '#target-metal-list', dictToList(content.materials.metal));
+			renderList('#template-client-list', '#target-client-list', dictToList(content.clients));
 		}
 
 		$.getJSON("artsto_data.json", function (data) {
