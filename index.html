@@ -393,7 +393,7 @@
 									</div>
 									<div>
 										<div id="target-name">Loading...</div>
-										<script type="x-tmpl-mustache" id="template-name">
+										<script type="x-tmpl-mustache" id="template-example-name">
 											Test Mustache library {{ name }}!
 										</script>
 									</div>
@@ -662,13 +662,13 @@
 			});
 		}
 
-		function renderTemplate(content) {
+		function renderTemplates(content) {
 			console.log(content)
 
 			// render name
-			var template = $('#template-name').html();
+			var template = $('#template-example-name').html();
 			Mustache.parse(template);   // optional, speeds up future uses
-			var rendered = Mustache.render(template, { name: "Luke" });
+			var rendered = Mustache.render(template, { name: "Artur" });
 			$('#target-name').html(rendered);
 
 			// render list
@@ -680,7 +680,7 @@
 		}
 
 		$.getJSON("artsto_data.json", function (data) {
-			renderTemplate(data.content)
+			renderTemplates(data.content)
 		});
 	</script>
 
