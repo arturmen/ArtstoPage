@@ -21,7 +21,7 @@
                 },
                 "materials": {
                     "wood": [
-                        "Czerwony",
+                        "Bordowy",
                         "Zielony"
                     ],
                     "metal": [
@@ -30,6 +30,7 @@
                     ],
                     "ceramics": [
                         "A1",
+                        "A2",
                         "A15",
                         "K2",
                         "K8"
@@ -37,83 +38,113 @@
                 }
             }
         ],
-        "materials_wood": {
-            "Czerwony": {
-                "name": "Czerwony",
-                "thumbnail": "colors/wood/red.jpg"
-            }
-        },
-        "materials_metal": {
-            "Czarny": {
-                "name": "Czarny",
-                "thumbnail": "colors/metal/black.jpg"
-            }
-        },
-        "materials_ceramics": {
-            "A1": {
-                "name": "A1",
-                "thumbnail": "images/materials/ceramics/a1.png",
-                "origin": "Bolesławiec"
+        "materials": {
+            "wood": {
+                "Naturalne drewno": {
+                    "name": "Naturalne drewno",
+                    "thumbnail": "images/materials/wood/natural.png"
+                },
+                "Orange": {
+                    "name": "Orange",
+                    "thumbnail": "images/materials/wood/orange.png"
+                },
+                "Brązowy": {
+                    "name": "Brązowy",
+                    "thumbnail": "images/materials/wood/brown.png"
+                },
+                "Bordowy": {
+                    "name": "Bordowy",
+                    "thumbnail": "images/materials/wood/red.png"
+                },
+                "Zielony": {
+                    "name": "Zielony",
+                    "thumbnail": "images/materials/wood/green.png"
+                }
             },
-            "A2": {
-                "name": "A2",
-                "thumbnail": "images/materials/ceramics/a2.png",
-                "origin": "Bolesławiec"
+            "metal": {
+                "Czarny": {
+                    "name": "Czarny",
+                    "thumbnail": "images/materials/metal/steel_black.png"
+                },
+                "Srebrny": {
+                    "name": "Srebrny",
+                    "thumbnail": "images/materials/metal/steel_silver.png"
+                },
+                "Złoty": {
+                    "name": "Złoty",
+                    "thumbnail": "images/materials/metal/steel_gold.png"
+                },
+                "Źeliwo": {
+                    "name": "Żeliwo",
+                    "thumbnail": "images/materials/metal/iron_black.png"
+                }
             },
-            "A3": {
-                "name": "A3",
-                "thumbnail": "images/materials/ceramics/a3.png",
-                "origin": "Bolesławiec"
-            },
-            "A4": {
-                "name": "A4",
-                "thumbnail": "images/materials/ceramics/a4.png",
-                "origin": "Bolesławiec"
-            },
-            "C1": {
-                "name": "C1",
-                "thumbnail": "images/materials/ceramics/c1.png",
-                "origin": "Bolesławiec"
-            },
-            "C2": {
-                "name": "C2",
-                "thumbnail": "images/materials/ceramics/c2.png",
-                "origin": "Bolesławiec"
-            },
-            "C3": {
-                "name": "C3",
-                "thumbnail": "images/materials/ceramics/c3.png",
-                "origin": "Bolesławiec"
-            },
-            "C4": {
-                "name": "C4",
-                "thumbnail": "images/materials/ceramics/c4.png",
-                "origin": "Bolesławiec"
-            },
-            "C5": {
-                "name": "C5",
-                "thumbnail": "images/materials/ceramics/c5.png",
-                "origin": "Bolesławiec"
-            },
-            "C6": {
-                "name": "C6",
-                "thumbnail": "images/materials/ceramics/c6.png",
-                "origin": "Bolesławiec"
-            },
-            "C7": {
-                "name": "C7",
-                "thumbnail": "images/materials/ceramics/c7.png",
-                "origin": "Bolesławiec"
-            },
-            "C8": {
-                "name": "C8",
-                "thumbnail": "images/materials/ceramics/c8.png",
-                "origin": "Bolesławiec"
-            },
-            "C9": {
-                "name": "C9",
-                "thumbnail": "images/materials/ceramics/c9.png",
-                "origin": "Bolesławiec"
+            "ceramics": {
+                "A1": {
+                    "name": "A1",
+                    "thumbnail": "images/materials/ceramics/a1.png",
+                    "origin": "Bolesławiec"
+                },
+                "A2": {
+                    "name": "A2",
+                    "thumbnail": "images/materials/ceramics/a2.png",
+                    "origin": "Bolesławiec"
+                },
+                "A3": {
+                    "name": "A3",
+                    "thumbnail": "images/materials/ceramics/a3.png",
+                    "origin": "Bolesławiec"
+                },
+                "A4": {
+                    "name": "A4",
+                    "thumbnail": "images/materials/ceramics/a4.png",
+                    "origin": "Bolesławiec"
+                },
+                "C1": {
+                    "name": "C1",
+                    "thumbnail": "images/materials/ceramics/c1.png",
+                    "origin": "Bolesławiec"
+                },
+                "C2": {
+                    "name": "C2",
+                    "thumbnail": "images/materials/ceramics/c2.png",
+                    "origin": "Bolesławiec"
+                },
+                "C3": {
+                    "name": "C3",
+                    "thumbnail": "images/materials/ceramics/c3.png",
+                    "origin": "Bolesławiec"
+                },
+                "C4": {
+                    "name": "C4",
+                    "thumbnail": "images/materials/ceramics/c4.png",
+                    "origin": "Bolesławiec"
+                },
+                "C5": {
+                    "name": "C5",
+                    "thumbnail": "images/materials/ceramics/c5.png",
+                    "origin": "Bolesławiec"
+                },
+                "C6": {
+                    "name": "C6",
+                    "thumbnail": "images/materials/ceramics/c6.png",
+                    "origin": "Bolesławiec"
+                },
+                "C7": {
+                    "name": "C7",
+                    "thumbnail": "images/materials/ceramics/c7.png",
+                    "origin": "Bolesławiec"
+                },
+                "C8": {
+                    "name": "C8",
+                    "thumbnail": "images/materials/ceramics/c8.png",
+                    "origin": "Bolesławiec"
+                },
+                "C9": {
+                    "name": "C9",
+                    "thumbnail": "images/materials/ceramics/c9.png",
+                    "origin": "Bolesławiec"
+                }
             }
         }
     }

@@ -363,58 +363,71 @@
 									</h2>
 									<h2 class="nobottommargin t300 ls1" style="font-size: 30px;">
 										Wszystkie produkowane przez nas młynki i kasetki oferujemy w szerokiej gamie kolorów drewna. Od naturalnego
-										drewna, przez uspokajającą zieleń, aż po odważną czerwień. <br>
+										drewna, przez uspokajającą zieleń, aż po odważną czerwień. <br><br>
 									</h2>
+
 									<div>
-										TODO Kolory drewna
+										<div id="target-wood-list">
+										</div>
+
+										<script type="text/template" id="template-wood-list">
+											<table class="divcenter center">
+												  <tr>
+													{{#items}}
+													  <td><img src="{{thumbnail}}" width="150" alt="{{name}}"/><br/>{{name}}</td>
+													{{/items}}
+												 </tr>
+											  </table>	
+											</script>
 									</div>
-									<h2>
-										TODO tekst metale
+
+									<h2 class="nobottommargin t300 ls1" style="font-size: 30px;">
+										Tutaj tekst o tym, jak w procesie obróbki metalicznej uzyskujemy najwyzszej jakości mielidła, korby i
+										podajniki na kawę.
+										<br><br>
 									</h2>
 									<div>
-										TODO Metale
+										<div id="target-metal-list">
+										</div>
+
+										<script type="text/template" id="template-metal-list">
+											  <table class="divcenter center">
+											  <tr>
+												{{#items}}
+												  <td><img src="{{thumbnail}}" width="150" alt="{{name}}"/><br/>{{name}}</td>
+												{{/items}}
+											 </tr>
+										  </table>	
+										</script>
 									</div>
-									<h2>
-										TODO tekst ceramika
+
+									<h2 class="nobottommargin t300 ls1" style="font-size: 30px;">
+										A tutaj o tym, jaką ładną ceramikę o wielu wzorach mamy w ofercie.
+										<br><br>
 									</h2>
 									<div>
-										<div id="target-list">
+										<div id="target-ceramics-list">
 										</div>
 
 										<script type="text/template" id="template-ceramics-list">
-									  <table>
+										  <table class="divcenter center">
 										  <tr>
 										    {{#items}}
-											  <td><img src="{{thumbnail}}" width="40" height="120" alt="{{name}}"/><br/>{{name}}</td>
+											  <td><img src="{{thumbnail}}" width="60" height="145" alt="{{name}}"/><br/>{{name}}</td>
 											{{/items}}
-										 </tr>
-									  </table>	
-									</script>
-									</div>
-									<div>
-										<div id="target-name">Loading...</div>
-										<script type="x-tmpl-mustache" id="template-example-name">
-											Test Mustache library {{ name }}!
+										 	</tr>
+									  	  </table>	
 										</script>
 									</div>
 								</div>
-								<div class="divcenter center" style="max-width: 900px;">
-									<h2 class="nobottommargin t300 ls1"><br>Kolory drewna:<br>
-										Brąz<br>
-										Naturalne drewno<br>
-										Zieleń<br>
-										Orange<br>
-										Niebiski<br>
-										Zielony<br>
-									</h2>
-								</div>
-								<div class="divcenter center" style="max-width: 900px;">
-									<h2 class="nobottommargin t300 ls1"><br>Kolory żeliwa:<br>
-										Czerń<br>
-										Złoto<br>
-									</h2>
-								</div>
 							</div>
+						</div>
+
+						<div>
+							<div id="target-name">Loading...</div>
+							<script type="x-tmpl-mustache" id="template-example-name">
+								Test Mustache library {{ name }}!
+							</script>
 						</div>
 
 						<!-- TODO FIXME center it -->
@@ -656,30 +669,37 @@
 	<script src="js/functions.js"></script>
 
 	<script>
-		function toList(dict) {
+		function dictToList(dict) {
 			return Object.keys(dict).map(function (key) {
 				return dict[key];
 			});
 		}
 
+		function renderList(templateTag, targetTag, itemsList) {
+			var template = $(templateTag).html();
+			var target = $(targetTag);
+			var result = Mustache.render(template, { "items": itemsList });
+			target.append(result);
+		}
+
 		function renderTemplates(content) {
+			// TODO remove (wiktor)
 			console.log(content)
 
 			// render name
 			var template = $('#template-example-name').html();
-			Mustache.parse(template);   // optional, speeds up future uses
+			Mustache.parse(template);
 			var rendered = Mustache.render(template, { name: "Artur" });
 			$('#target-name').html(rendered);
 
-			// render list
-			var template = $('#template-ceramics-list').html();
-			var targetList = $('#target-list');
-			var result = Mustache.render(template, { "items": toList(content.materials_ceramics) });
-
-			targetList.append(result);
+			// render specific lists on the page
+			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood));
+			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics));
+			renderList('#template-metal-list', '#target-metal-list', dictToList(content.materials.metal));
 		}
 
 		$.getJSON("artsto_data.json", function (data) {
+			// Parses pseudo-database JSON file and calls the rendering of elements in the HTML file
 			renderTemplates(data.content)
 		});
 	</script>
