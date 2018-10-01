@@ -575,13 +575,21 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
+
+	<script>
+		$.getJSON("artsto_data.json", function(json) {
+			console.log(json); // this will show the info it in firebug console
+		});
+	</script>
+
+
 	<script>
 
 		jQuery(window).on( 'load', function(){
 
 			// Google Map
 			jQuery('#headquarters-map').gMap({
-				address: 'Rogi, ul. Dworska 147, Polska',
+				address: 'Dworska 147, 38-430 Rogi, Polska',
 				maptype: 'ROADMAP',
 				zoom: 14,
 				markers: [

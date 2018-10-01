@@ -17,7 +17,7 @@
                     "all": [
                         "test2.jpg",
                         "test.jpg"
-                    ],
+                    ]
                 },
                 "materials": {
                     "wood": [
@@ -41,20 +41,20 @@
             "Czerwony": {
                 "name": "Czerwony",
                 "thumbnail": "colors/wood/red.jpg"
-            },
+            }
         },
         "materials_metal": {
             "Czarny": {
                 "name": "Czarny",
                 "thumbnail": "colors/metal/black.jpg"
-            },
+            }
         },
         "materials_ceramic": {
             "A1": {
                 "name": "Ceramika A1",
                 "thumbnail": "colors/ceramics/black.jpg",
                 "origin": "Bolesławiec"
-            },
-        },
+            }
+        }
     }
 }
