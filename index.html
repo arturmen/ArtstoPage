@@ -41,9 +41,14 @@
 	============================================= -->
 	<title>Artsto | Młynki do kawy i pieprzu</title>
 
+	<style>
+		.horizontal { display: inline; }
+	</style>
+
 </head>
 
-<body class="stretched side-push-panel" onload="loadUser()">
+<body class="stretched side-push-panel">
+	<!-- onload="renderTemplate() -->
 
 	<div class="body-overlay"></div>
 
@@ -335,37 +340,35 @@
 									Wszystkie produkowane przez nas młynki i kasetki oferujemy w szerokiej gamie kolorów drewna. Od naturalnego drewna, przez uspokajającą zieleń, aż po odważną czerwień. <br>
 								</h2>
 								<div>
-									Kolory drewna
+									TODO Kolory drewna
 								</div>
 								<h2>
 									TODO tekst metale
 								</h2>
 								<div>
-									Metale
+									TODO Metale
 								</div>
 								<h2>
 									TODO tekst ceramika
 								</h2>
 								<div>
-									HERE
-									<div id="output">
-
+									<div id="target-list">
 									</div>
 									
-									<script type="text/template" id="test">
-										<h1>{{Subject}}</h1>
-									  <ul>
-										  {{#names}}
-											  <li>{{name}}</li>
-										{{/names}}
-										 </ul>
-										
+									<script type="text/template" id="template-ceramics-list">
+									  <table>
+										  <tr>
+										    {{#items}}
+											  <td><img src="{{thumbnail}}" width="40" height="120" alt="{{name}}"/><br/>{{name}}</td>
+											{{/items}}
+										 </tr>
+									  </table>	
 									</script>
 								</div>
 								<div>
-										<div id="target">Loading...</div>
-										<script id="template" type="x-tmpl-mustache">
-											Hello {{ name }}!
+										<div id="target-name">Loading...</div>
+										<script type="x-tmpl-mustache" id="template-name" >
+											Test Mustache library {{ name }}!
 										</script>
 								</div>
 							</div>
@@ -614,35 +617,32 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
-
 	<script>
-		function loadUser() {
-			var template = $('#template').html();
-			Mustache.parse(template);   // optional, speeds up future uses
-			var rendered = Mustache.render(template, {name: "Luke"});
-			$('#target').html(rendered);
-
-			
-			var template = $('#test').html();
-			var output = $('#output');
-
-			var data = {
-				"Subject": "Template Engines",
-				"names": [
-					{"name": "Mustache"},
-					{"name": "HandleBar"}
-				]
-			};
-
-			var result = Mustache.render(template, data);
-			
-			output.append(result);
-
-
+		function toList(dict) {
+			return Object.keys(dict).map(function (key) {
+				return dict[key];
+			});
 		}
 
-		$.getJSON("artsto_data.json", function(json) {
-			console.log(json); // this will show the info it in firebug console
+		function renderTemplate(content) {
+			console.log(content)
+
+			// render name
+			var template = $('#template-name').html();
+			Mustache.parse(template);   // optional, speeds up future uses
+			var rendered = Mustache.render(template, {name: "Luke"});
+			$('#target-name').html(rendered);
+			
+			// render list
+			var template = $('#template-ceramics-list').html();
+			var targetList = $('#target-list');
+			var result = Mustache.render(template, {"items": toList(content.materials_ceramics)});
+		
+			targetList.append(result);
+		}
+
+		$.getJSON("artsto_data.json", function(data) {
+			renderTemplate(data.content)
 		});
 	</script>
 

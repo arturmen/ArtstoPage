@@ -49,15 +49,70 @@
                 "thumbnail": "colors/metal/black.jpg"
             }
         },
-        "materials_ceramic": {
+        "materials_ceramics": {
             "A1": {
-                "name": "Ceramika A1",
-                "thumbnail": "images/materials/ceramics/a1.jpg",
+                "name": "A1",
+                "thumbnail": "images/materials/ceramics/a1.png",
                 "origin": "Bolesławiec"
             },
             "A2": {
-                "name": "Ceramika A2",
-                "thumbnail": "images/materials/ceramics/a2.jpg",
+                "name": "A2",
+                "thumbnail": "images/materials/ceramics/a2.png",
+                "origin": "Bolesławiec"
+            },
+            "A3": {
+                "name": "A3",
+                "thumbnail": "images/materials/ceramics/a3.png",
+                "origin": "Bolesławiec"
+            },
+            "A4": {
+                "name": "A4",
+                "thumbnail": "images/materials/ceramics/a4.png",
+                "origin": "Bolesławiec"
+            },
+            "C1": {
+                "name": "C1",
+                "thumbnail": "images/materials/ceramics/c1.png",
+                "origin": "Bolesławiec"
+            },
+            "C2": {
+                "name": "C2",
+                "thumbnail": "images/materials/ceramics/c2.png",
+                "origin": "Bolesławiec"
+            },
+            "C3": {
+                "name": "C3",
+                "thumbnail": "images/materials/ceramics/c3.png",
+                "origin": "Bolesławiec"
+            },
+            "C4": {
+                "name": "C4",
+                "thumbnail": "images/materials/ceramics/c4.png",
+                "origin": "Bolesławiec"
+            },
+            "C5": {
+                "name": "C5",
+                "thumbnail": "images/materials/ceramics/c5.png",
+                "origin": "Bolesławiec"
+            },
+            "C6": {
+                "name": "C6",
+                "thumbnail": "images/materials/ceramics/c6.png",
+                "origin": "Bolesławiec"
+            },
+            "C7": {
+                "name": "C7",
+                "thumbnail": "images/materials/ceramics/c7.png",
+                "origin": "Bolesławiec"
+            },
+            "C8": {
+                "name": "C8",
+                "thumbnail": "images/materials/ceramics/c8.png",
+                "origin": "Bolesławiec"
+            },
+            "C9": {
+                "name": "C9",
+                "thumbnail": "images/materials/ceramics/c9.png",
                 "origin": "Bolesławiec"
             }
         }
