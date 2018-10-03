@@ -5,13 +5,13 @@
             "Młynki do pieprzu",
             "Kasetki na herbatę"
         ],
-        "products": [
-            {
-                "name": "Młynek Retro",
-                "name-short": "Młynek Retro",
+        "products": {
+            "klepsydra": {
+                "name": "Młynek do kawy Klepsydra",
+                "name-short": "Młynek Klepsydra",
                 "category": "Młynki do kawy",
-                "description-long": "Dlug opis",
-                "description-short": "Krotki opis",
+                "description-long": "Nasz młynek składa się z wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
+                "description-short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
                 "images": {
                     "main": "test.jpg",
                     "all": [
@@ -37,11 +37,11 @@
                     ]
                 }
             }
-        ],
+        },
         "materials": {
             "wood": {
                 "Naturalne drewno": {
-                    "name": "Naturalne drewno",
+                    "name": "Naturalny",
                     "thumbnail": "images/materials/wood/natural.png"
                 },
                 "Orange": {
