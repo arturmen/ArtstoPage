@@ -5,8 +5,8 @@
             "Młynki do pieprzu",
             "Kasetki na herbatę"
         ],
-        "products": {
-            "klepsydra": {
+        "products": [
+             {
                 "name": "Młynek do kawy Klepsydra",
                 "name-short": "Młynek Klepsydra",
                 "category": "Młynki do kawy",
@@ -37,7 +37,7 @@
                     ]
                 }
             }
-        },
+        ],
         "materials": {
             "wood": {
                 "Naturalne drewno": {
