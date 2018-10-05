@@ -103,9 +103,9 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo/logo-artsto-light.png"><img src="images/logo/logo-artsto-dark.png"
+						<a href="index.html" class="standard-logo" data-dark-logo="assets/images/logo/logo-artsto-light.png"><img src="assets/images/logo/logo-artsto-dark.png"
 							 alt="Artsto Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo/logo-artsto-light.png"><img src="images/logo/logo-artsto-dark.png"
+						<a href="index.html" class="retina-logo" data-dark-logo="assets/images/logo/logo-artsto-light.png"><img src="assets/images/logo/logo-artsto-dark.png"
 							 alt="Artsto Logo"></a>
 					</div><!-- #logo end -->
 
@@ -149,7 +149,7 @@
 
 				<div class="full-screen force-full-screen row center dark section nopadding nomargin noborder ohidden">
 
-					<div class="col-6 nopadding full-screen force-full-screen dark" style="background-image: url('images/selected/DSC_0132.jpg'); background-size: cover;">
+					<div class="col-6 nopadding full-screen force-full-screen dark" style="background-image: url('assets/images/products/DSC_0132.jpg'); background-size: cover;">
 
 						<div class="container center">
 							<div class="vertical-middle">
@@ -173,7 +173,7 @@
 							 class="icon-angle-down infinite animated fadeInDown"></i></a>
 
 					</div>
-					<div class="col-6 nopadding full-screen force-full-screen dark" style="background-image: url('images/selected/DSC_0080.jpg'); background-size: cover;">
+					<div class="col-6 nopadding full-screen force-full-screen dark" style="background-image: url('assets/images/products/DSC_0080.jpg'); background-size: cover;">
 
 						<div class="container center">
 							<div class="vertical-middle">
@@ -252,7 +252,7 @@
 							<article class="portfolio-item pf-media pf-icons wide">
 								<div class="portfolio-image">
 									<a href="">
-										<img src="images/selected/DSC_00821.jpg" alt="Open Imagination">
+										<img src="assets/images/products/DSC_00821.jpg" alt="Open Imagination">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -266,7 +266,7 @@
 							<article class="portfolio-item pf-illustrations">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/selected/DSC_00801.jpg" alt="Open Imagination">
+										<img src="assets/images/products/DSC_00801.jpg" alt="Open Imagination">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -280,7 +280,7 @@
 							<article class="portfolio-item pf-graphics pf-uielements">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/selected/DSC_00761.jpg" alt="Mac Sunglasses">
+										<img src="assets/images/products/DSC_00761.jpg" alt="Mac Sunglasses">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -295,7 +295,7 @@
 
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/selected/DSC_01722.jpg" alt="Locked Steel Gate">
+										<img src="assets/images/products/DSC_01722.jpg" alt="Locked Steel Gate">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -309,7 +309,7 @@
 							<article class="portfolio-item pf-uielements pf-media wide">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/selected/DSC_01052.jpg" alt="Console Activity">
+										<img src="assets/images/products/DSC_01052.jpg" alt="Console Activity">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -323,7 +323,7 @@
 							<article class="portfolio-item pf-media pf-icons">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/selected/DSC_01461.jpg" alt="Open Imagination">
+										<img src="assets/images/products/DSC_01461.jpg" alt="Open Imagination">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -337,7 +337,7 @@
 							<article class="portfolio-item pf-uielements pf-icons">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/selected/DSC_00871.jpg" alt="Backpack Contents">
+										<img src="assets/images/products/DSC_00871.jpg" alt="Backpack Contents">
 									</a>
 									<div class="portfolio-overlay">
 										<div class="portfolio-desc">
@@ -420,13 +420,6 @@
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<div>
-							<div id="target-name">Loading...</div>
-							<script type="x-tmpl-mustache" id="template-example-name">
-								Test Mustache library {{ name }}!
-							</script>
 						</div>
 
 						<!-- TODO FIXME(wiktor) center it -->
@@ -578,14 +571,7 @@
 		}
 
 		function renderTemplates(content) {
-			// TODO remove (wiktor)
 			console.log(content)
-
-			// render name
-			var template = $('#template-example-name').html();
-			Mustache.parse(template);
-			var rendered = Mustache.render(template, { name: "Artur" });
-			$('#target-name').html(rendered);
 
 			// render specific lists on the page
 			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood));
