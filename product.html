@@ -406,23 +406,23 @@
 			target.append(result);
 		}
 
-		// function renderObject(templateTag, targetTag, itemTag, object) {
-		// 	var template = $(templateTag).html();
-		// 	Mustache.parse(template);
-		// 	var rendered = Mustache.render(template, {itemTag : object});
-		// 	$(targetTag).html(rendered);
-		// }
+		// TODO move to utils (wiktor)
+		function sanitazeName(str) {
+			return str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+		}
 
-		function renderTemplates(content) {
-			// TODO remove (wiktor)
+		function renderProductPage(content) {
+			var url = new URL(window.location.href);
+			var productSelection = url.searchParams.get("name");
 
-			var urlTag = window.location.search.split('=')[1]
 			var index = 0
-			for (var i in content.products) {
-				if (urlTag === content.products[i].tag) {
-					index = i;
+			for (var idx in content.products) {
+				if (productSelection === sanitazeName(content.products[idx].name)) {
+					index = idx;
+					break;
 				}
 			}
+
 			var prod_name = content.products[index].name
 			var prod_description_long = content.products[index].description_long
 			var prod_description_short = content.products[index].description_short
@@ -455,7 +455,6 @@
 			var rendered = Mustache.render(template, { "images": prod_images });
 			$('#target-product-images-list').html(rendered);
 
-
 			// render specific lists on the page
 			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood), prod_wood);
 			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics), prod_ceramics);
@@ -464,7 +463,7 @@
 
 		$.getJSON("artsto_data.json", function (data) {
 			// Parses pseudo-database JSON file and calls the rendering of elements in the HTML file
-			renderTemplates(data.content)
+			renderProductPage(data.content)
 		});
 	</script>
 

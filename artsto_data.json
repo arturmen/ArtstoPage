@@ -46,13 +46,13 @@
             },
             {
                 "tag": "pieprz",
-                "name": "Młynek do Pieprz",
-                "name_short": "Młynek Pieprz",
+                "name": "Młynek do pieprzu",
+                "name_short": "Młynek do pieprzu",
                 "category": "Młynki do pieprzu",
                 "description_long": "Nasz młynek składa się z MŁYNEK PIEPRZ wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
                 "description_short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
                 "images": {
-                    "main": "images/gallery/Dsc_0082.jpg",
+                    "main": "images/gallery/DSC_0082.jpg",
                     "all": [
                         "test2.jpg",
                         "test.jpg"
@@ -80,7 +80,7 @@
         ],
         "materials": {
             "wood": {
-                "Naturalne drewno": {
+                "Naturalny": {
                     "name": "Naturalny",
                     "thumbnail": "images/materials/wood/natural.png"
                 },
