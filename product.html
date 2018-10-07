@@ -421,15 +421,13 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
+	<script src="js/utils.js" type="text/javascript"></script>
+
+
 	<script>
-		function dictToList(dict) {
-			return Object.keys(dict).map(function (key) {
-				return dict[key];
-			});
-		}
-
+		
 		function renderList(templateTag, targetTag, itemsList, itemsProductList) {
-
+			// TODO(artur) make it cleaner (maybe use dictionary instead of list)
 			var list = [];
 			for (var i in itemsList) {
 				for (var j in itemsProductList) {
@@ -442,18 +440,6 @@
 			var target = $(targetTag);
 			var result = Mustache.render(template, { "items": list });
 			target.append(result);
-		}
-
-		function renderListNormal(templateTag, targetTag, itemsList) {
-			var template = $(templateTag).html();
-			var target = $(targetTag);
-			var result = Mustache.render(template, { "items": itemsList });
-			target.append(result);
-		}
-
-		// TODO move to utils (wiktor)
-		function sanitazeName(str) {
-			return str.replace(/[^a-z0-9]/gi, '').toLowerCase();
 		}
 
 		function filterGalleryImages(images) {
