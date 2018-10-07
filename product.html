@@ -167,25 +167,27 @@
 		<!-- Content
 		============================================= -->
 		<section id="content">
-
 			<div class="content-wrap">
-
 				<div class="container clearfix">
-					<!-- Portfolio Single Gallery
-					============================================= -->
-					<div class="col_two_third portfolio-single-image">
-						<div class="fslider" data-arrows="true" data-animation="slide">
-							<div class="flexslider">
-								<div class="slider-wrap" id="target-product-images-list">
-								</div>
+					<div class="col_two_third">
+						<!-- Product Single - Gallery
+						   ============================================= -->
+						<div class="product-image">
+							<div class="fslider" data-pagi="false" data-arrows="false" data-thumbs="true">
+								<div class="flexslider">
+									<div class="slider-wrap" id="target-product-images-list" data-lightbox="gallery">
+									</div>
 
-								<script type="text/template" id="template-product-images">
+									<script type="text/template" id="template-product-images">
 										{{#images}}
-											<div class="slide"><a href="#"><img src="{{source}}" alt="dupa"></a></div>
+											<div class="slide" data-thumb="{{source}}"><a href="{{source}}" title="Młynek Klepsydra"
+												data-lightbox="gallery-item"><img src="{{source}}" alt="Młynek Klepsydra"></a></div>
 										{{/images}}
-								</script>
+									</script>
+								</div>
 							</div>
-						</div>
+
+						</div><!-- Product Single - Gallery End -->
 					</div>
 
 					<!-- Portfolio Single Content
