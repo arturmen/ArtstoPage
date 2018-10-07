@@ -7,16 +7,18 @@
         ],
         "products": [
              {
+                "tag": "klepsydra",
                 "name": "Młynek do kawy Klepsydra",
-                "name-short": "Młynek Klepsydra",
+                "name_short": "Młynek Klepsydra",
                 "category": "Młynki do kawy",
-                "description-long": "Nasz młynek składa się z wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
-                "description-short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
+                "description_long": "Nasz młynek składa MŁYNEK KLEPSYDRA się z wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
+                "description_short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
                 "images": {
-                    "main": "test.jpg",
+                    "main": 
+                        {"source" : "images/gallery/DSC_0082.jpg"},
                     "all": [
-                        "test2.jpg",
-                        "test.jpg"
+                        {"source" : "images/gallery/DSC_0128.jpg"},
+                        {"source" : "images/gallery/DSC_0132.jpg"}
                     ]
                 },
                 "materials": {
@@ -27,6 +29,39 @@
                     "metal": [
                         "Czarny",
                         "Złoty"
+                    ],
+                    "ceramics": [
+                        "A1",
+                        "A2",
+                        "A15",
+                        "K2",
+                        "K8"
+                    ]
+                }
+            },
+            {
+                "tag": "pieprz",
+                "name": "Młynek do Pieprz",
+                "name_short": "Młynek Pieprz",
+                "category": "Młynki do pieprzu",
+                "description_long": "Nasz młynek składa się z MŁYNEK PIEPRZ wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
+                "description_short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
+                "images": {
+                    "main": "images/gallery/Dsc_0082.jpg",
+                    "all": [
+                        "test2.jpg",
+                        "test.jpg"
+                    ]
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Srebrny"
                     ],
                     "ceramics": [
                         "A1",
@@ -166,7 +201,7 @@
             },
             {
                 "name": "Nalewki Staropolskie",
-                "logo": "images/clients/logo_nalewki_staropolskie.jpg"
+                "logo": "images/clients/logo_nalewki_staropolskie.jpeg"
             }
         ]
     }
