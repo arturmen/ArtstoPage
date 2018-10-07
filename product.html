@@ -181,39 +181,17 @@
 					<div class="col_two_third portfolio-single-image">
 						<div class="fslider" data-arrows="true" data-animation="slide">
 							<div class="flexslider">
-								<div class="slider-wrap">
-									<div class="slide"><a href="#"><img src="images/gallery/Dsc_0082.jpg" alt=""></a></div>
-									<div class="slide"><a href="#"><img src="images/gallery/DSC_0128.jpg" alt=""></a></div>
-									<div class="slide"><a href="#"><img src="images/gallery/DSC_0132.jpg" alt=""></a></div>
-
-									<!-- <div class="slide"><a href="#"><img src="images/gallery/DSC_0132.jpg" alt=""></a></div> -->
-
-									<!-- <div class="slide">
-										<a href="#">
-										<div id="target-images"></div>
-											<script type="x-tmpl-mustache" id="template-product-images">
-											{{#images}}
-												<img src="{{source}}" alt="">
-											{{/images}}
-											</script>
-										</a>
-									</div> -->
-
+								<div class="slider-wrap" id="target-product-images-list">
 								</div>
+
+								<script type="text/template" id="template-product-images">
+										{{#images}}
+											<div class="slide"><a href="#"><img src="{{source}}" alt="dupa"></a></div>
+										{{/images}}
+								</script>
 							</div>
 						</div>
-					</div><!-- .portfolio-single-image end -->
-
-
-
-					<!-- <div>	
-							<div id="target-images"></div>
-							<script type="x-tmpl-mustache" id="template-product-images">
-								{{#images}}
-									<img src={{source}} alt="">
-								{{/images}}
-							</script>
-					</div> -->
+					</div>
 
 					<!-- Portfolio Single Content
 					============================================= -->
@@ -385,9 +363,6 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
 
-
-
-
 	<!-- Templating library -->
 	<script src="https://cdn.rawgit.com/janl/mustache.js/master/mustache.min.js"></script>
 
@@ -459,15 +434,6 @@
 			prod_images.unshift(prod_image_main)
 			console.log(prod_images);
 
-
-
-
-
-			// var template = $('#template-example-name').html();
-			// Mustache.parse(template);
-			// var rendered = Mustache.render(template, { name: "Artur" });
-			// $('#target-name').html(rendered);
-
 			//renderObject('#template-product-description','#target-description',"description",prod_name)
 			var template = $('#template-product-description-long').html();
 			Mustache.parse(template);
@@ -484,24 +450,17 @@
 			var rendered = Mustache.render(template, { "name": prod_name });
 			$('#target-name').html(rendered);
 
-			// var template = $('#template-product-images').html();
-			// Mustache.parse(template);
-			// var rendered = Mustache.render(template, {"images": prod_images});
-			// $('#target-images').html(rendered);
-
-
+			var template = $('#template-product-images').html();
+			Mustache.parse(template);
+			var rendered = Mustache.render(template, { "images": prod_images });
+			$('#target-product-images-list').html(rendered);
 
 
 			// render specific lists on the page
 			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood), prod_wood);
 			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics), prod_ceramics);
 			renderList('#template-metal-list', '#target-metal-list', dictToList(content.materials.metal), prod_metal);
-
-
-
 		}
-
-
 
 		$.getJSON("artsto_data.json", function (data) {
 			// Parses pseudo-database JSON file and calls the rendering of elements in the HTML file
