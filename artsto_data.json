@@ -3,6 +3,7 @@
         "categories": [
             "Młynki do kawy",
             "Młynki do pieprzu",
+            "Młynki do soli",
             "Kasetki na herbatę"
         ],
         "products": [
@@ -81,7 +82,7 @@
                 "tag": "kompletPS",
                 "name": "Młynki do Pieprzu i Soli - komplet",
                 "name_short": "Młynek Pieprz Sól",
-                "category": "Młynki wysokie",
+                "category": "Młynki do pieprzu",
                 "description_long": "Młynki do pieprzu i soli świetnie sprawdzają się jako ozdoba stołu, oraz jako praktyczny dodatek do kuchni. Wykonany jest z drewna, posiada elementy ceramiki i metalu.",
                 "description_short": "Młynek do pieprzu i soli w komplecie",
                 "images": {
@@ -145,7 +146,7 @@
                 "tag": "sol",
                 "name": "Młynek do solu porcelanowy",
                 "name_short": "Młynek do solu porcelanowy",
-                "category": "Młynki wysokie",
+                "category": "Młynki do soli",
                 "description_long": "Młynek do solu wysoki porcelanowy produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na sol wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
                 "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
                 "images": {
@@ -209,7 +210,7 @@
                 "tag": "pieprz",
                 "name": "Młynek do pieprzu porcelanowy",
                 "name_short": "Młynek do pieprzu porcelanowy",
-                "category": "Młynki wysokie",
+                "category": "Młynki do pieprzu",
                 "description_long": "Młynek do pieprzu wysoki porcelanowy produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
                 "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
                 "images": {
@@ -273,14 +274,14 @@
                 "tag": "pieprz",
                 "name": "Młynek do pieprzu",
                 "name_short": "Młynek do pieprzu",
-                "category": "Młynki wysokie",
+                "category": "Młynki do pieprzu",
                 "description_long": "Młynek do pieprzu wysoki produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
                 "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
                 "images": {
                     "main_idx": 0,
                     "all": [
                         {
-                            "source": "assets/images/products/mlynek_coperto_1.jpg",
+                            "source": "assets/images/products/mlynek_alto_1.jpg",
                             "color": "brown"
                         }
                     ]
