@@ -6,7 +6,7 @@
             "Kasetki na herbatę"
         ],
         "products": [
-             {
+            {
                 "tag": "klepsydra",
                 "name": "Młynek do kawy Klepsydra",
                 "name_short": "Młynek Klepsydra",
@@ -14,11 +14,16 @@
                 "description_long": "Nasz młynek składa MŁYNEK KLEPSYDRA się z wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
                 "description_short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
                 "images": {
-                    "main": 
-                        {"source" : "images/gallery/DSC_0082.jpg"},
+                    "main": {
+                        "source": "images/gallery/DSC_0082.jpg"
+                    },
                     "all": [
-                        {"source" : "images/gallery/DSC_0128.jpg"},
-                        {"source" : "images/gallery/DSC_0132.jpg"}
+                        {
+                            "source": "images/gallery/DSC_0128.jpg"
+                        },
+                        {
+                            "source": "images/gallery/DSC_0132.jpg"
+                        }
                     ]
                 },
                 "materials": {
