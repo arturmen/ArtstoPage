@@ -152,12 +152,106 @@
                 }
             },
             {
+                "tag": "pieprz",
+                "name": "Młynek do pieprzu",
+                "name_short": "Młynek do pieprzu",
+                "category": "Młynki wysokie",
+                "description_long": "Młynek do pieprzu wysoki porcelanowy produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
+                "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
+                "images": {
+                    "main": {
+                        "source": "images/gallery/DSC_0115.jpg",
+                        "color": "brown"
+                    },
+                    "all": []
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Srebrny"
+                    ],
+                    "ceramics": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "A4",
+                        "C1",
+                        "C2",
+                        "C3",
+                        "C4",
+                        "C5",
+                        "C6",
+                        "C7",
+                        "C8",
+                        "C9"
+                    ]
+                }
+            },
+            {
                 "tag": "zakryty",
                 "name": "Młynek do kawy Zakryty",
                 "name_short": "Młynek Zakryty",
                 "category": "Młynki do kawy",
                 "description_long": "Nasz młynek do kawy zakryty składa się z wielu wysokiej jakości komponentów. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
                 "description_short": "Świetnie wykonany młynek który sprawdzi się jako ozdoba do salonu i pomoc w kuchni",
+                "images": {
+                    "main": {
+                        "source": "images/gallery/DSC_0105.jpg",
+                        "color": "brown"
+                    },
+                    "all": [
+                        {
+                            "source": "images/gallery/DSC_0121.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "images/gallery/DSC_0161.jpg",
+                            "color": "bordo"
+                        }
+                    ]
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Czarny",
+                        "Złoty"
+                    ],
+                    "ceramics": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "A4",
+                        "C1",
+                        "C2",
+                        "C3",
+                        "C4",
+                        "C5",
+                        "C6",
+                        "C7",
+                        "C8",
+                        "C9"
+                    ]
+                }
+            },
+            {
+                "tag": "babuni",
+                "name": "Młynek do kawy Babuni",
+                "name_short": "Młynek Babuni",
+                "category": "Młynki do kawy",
+                "description_long": "Młynek Babuni jest wyposażony w otwarty zasobnik na kawę oraz drewnianą szufladkę na zmieloną kawę.",
+                "description_short": "Produkowany jest w sześciu podstawowych kolorach drewna, natomiast elementy metalowe mogą być w dwóch kolorystykach.",
                 "images": {
                     "main": {
                         "source": "images/gallery/DSC_0105.jpg",
@@ -252,6 +346,48 @@
                 "name_short": "Młynek ścienny",
                 "category": "Młynki do kawy",
                 "description_long": "Nasz młynek do kawy można powiesić na ścianie jako bardzo oryginalna ozdoba. Cermika sprowadzana jest z bolesławca. Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
+                "description_short": "Świetnie wykonany młynek",
+                "images": {
+                    "main": {
+                        "source": "images/gallery/DSC_0172.jpg",
+                        "color": "bordo"
+                    },
+                    "all": []
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Żeliwo"
+                    ],
+                    "ceramics": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "A4",
+                        "C1",
+                        "C2",
+                        "C3",
+                        "C4",
+                        "C5",
+                        "C6",
+                        "C7",
+                        "C8",
+                        "C9"
+                    ]
+                }
+            },
+            {
+                "tag": "retro",
+                "name": "Młynek do kawy Retro",
+                "name_short": "Młynek Retro",
+                "category": "Młynki do kawy",
+                "description_long": "Młynek retro produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na kawę wykonany jest z żeliwa. Szufladka na zmieloną kawę wykonana jest z drewna.",
                 "description_short": "Świetnie wykonany młynek",
                 "images": {
                     "main": {
