@@ -351,7 +351,9 @@
 			for (var idx in products) {
 				var p = products[idx]
 				p["pf-filters"] = getProductFilters(p).join(" ")
-				p["images_all"] = p.images.all
+				p["images_all"] = p.images.all.filter(function (image) {
+					return !(('gallery' in image) && (image.gallery === false));
+				});
 				p["name_url"] = sanitazeName(p.name)
 			}
 

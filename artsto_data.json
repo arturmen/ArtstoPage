@@ -21,7 +21,8 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_1.jpg",
-                            "color": "green"
+                            "color": "green",
+                            "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_2.jpg",
@@ -37,7 +38,8 @@
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_5.jpg",
-                            "color": "natural"
+                            "color": "natural",
+                            "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_8jpg",
@@ -331,11 +333,13 @@
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_2.jpg",
-                            "color": "brown"
+                            "color": "brown",
+                            "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_3.jpg",
-                            "color": "brown"
+                            "color": "brown",
+                            "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_4.jpg",
@@ -433,7 +437,8 @@
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_3.jpg",
-                            "color": "green"
+                            "color": "green",
+                            "gallery": false
                         }
                     ]
                 },
