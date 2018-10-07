@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # gsutil cp ArtstoPage/* gs://artsto-preview
 # gsutil rsync -d -r ArtstoPage gs://artsto-preview
 gsutil -m rsync -d -r -x '\.git.*' ArtstoPage gs://artsto-preview
