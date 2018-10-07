@@ -319,8 +319,8 @@
 				})
 			}
 
-			for (var idx in products) {
-				product = products[idx]
+			for (var idx in content.products) {
+				product = content.products[idx]
 				filters.push({
 					"name": product.name,
 					"tag": "." + filterifyName(product.name)
@@ -334,6 +334,8 @@
 					"tag": "." + filterifyName(color.name)
 				})
 			}
+
+			console.log(filters)
 
 			var rendered = Mustache.render(template, { "filters": filters });
 
