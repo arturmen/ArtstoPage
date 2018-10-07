@@ -456,6 +456,12 @@
 			return str.replace(/[^a-z0-9]/gi, '').toLowerCase();
 		}
 
+		function filterGalleryImages(images) {
+			return images.filter(function (image) {
+				return !(('gallery' in image) && (image.gallery === false));
+			});
+		}
+
 		function renderProductPage(content) {
 			var url = new URL(window.location.href);
 			var productSelection = url.searchParams.get("name");
@@ -468,42 +474,32 @@
 				}
 			}
 
-			var prod_name = content.products[index].name
-			var prod_description_long = content.products[index].description_long
-			var prod_description_short = content.products[index].description_short
-			var prod_wood = content.products[index].materials.wood
-			var prod_metal = content.products[index].materials.metal
-			var prod_ceramics = content.products[index].materials.ceramics
-			var prod_image_main = content.products[index].images.main
-			var prod_images = content.products[index].images.all
-			prod_images.unshift(prod_image_main)
-			console.log(prod_images);
+			var prod = content.products[index]
 
-			//renderObject('#template-product-description','#target-description',"description",prod_name)
 			var template = $('#template-product-description-long').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "description-long": prod_description_long });
+			var rendered = Mustache.render(template, { "description-long": prod.description_long });
 			$('#target-description-long').html(rendered);
 
 			var template = $('#template-product-description-short').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "description-short": prod_description_short });
+			var rendered = Mustache.render(template, { "description-short": prod.description_short });
 			$('#target-description-short').html(rendered);
 
 			var template = $('#template-product-name').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "name": prod_name });
+			var rendered = Mustache.render(template, { "name": prod.name });
 			$('#target-name').html(rendered);
 
 			var template = $('#template-product-images').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "images": prod_images });
+			var rendered = Mustache.render(template, { "images": filterGalleryImages(prod.images.all) });
 			$('#target-product-images-list').html(rendered);
 
 			// render specific lists on the page
-			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood), prod_wood);
-			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics), prod_ceramics);
-			renderList('#template-metal-list', '#target-metal-list', dictToList(content.materials.metal), prod_metal);
+			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood), prod.materials.wood);
+			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics), prod.materials.ceramics);
+			renderList('#template-metal-list', '#target-metal-list', dictToList(content.materials.metal), prod.materials.metal);
 		}
 
 		$.getJSON("artsto_data.json", function (data) {

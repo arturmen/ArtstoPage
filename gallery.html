@@ -308,6 +308,12 @@
 			return fs
 		}
 
+		function filterGalleryImages(images) {
+			return images.filter(function (image) {
+				return !(('gallery' in image) && (image.gallery === false));
+			});
+		}
+
 		function renderTemplates(content) {
 			console.log(content)
 
@@ -349,12 +355,10 @@
 			// render gallery items
 			var products = content.products
 			for (var idx in products) {
-				var p = products[idx]
-				p["pf-filters"] = getProductFilters(p).join(" ")
-				p["images_all"] = p.images.all.filter(function (image) {
-					return !(('gallery' in image) && (image.gallery === false));
-				});
-				p["name_url"] = sanitazeName(p.name)
+				var p = products[idx];
+				p["pf-filters"] = getProductFilters(p).join(" ");
+				p["images_all"] = filterGalleryImages(p.images.all);
+				p["name_url"] = sanitazeName(p.name);
 			}
 
 			var template = $('#template-gallery-items').html();
