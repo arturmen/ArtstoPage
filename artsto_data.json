@@ -15,37 +15,45 @@
                 "description_short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0082.jpg",
+                        "source": "assets/images/products/mlynek_tempo_porcellana_1.jpg",
                         "color": "green"
                     },
                     "all": [
                         {
-                            "source": "images/gallery/DSC_0128.jpg",
+                            "source": "assets/images/products/mlynek_tempo_porcellana_1.jpg",
                             "color": "green"
                         },
                         {
-                            "source": "images/gallery/DSC_0132.jpg",
-                            "color": "green"
+                            "source": "assets/images/products/mlynek_tempo_porcellana_2.jpg",
+                            "color": "yellow"
                         },
                         {
-                            "source": "images/gallery/DSC_0083.jpg",
+                            "source": "assets/images/products/mlynek_tempo_porcellana_3.jpg",
                             "color": "orange"
                         },
                         {
-                            "source": "images/gallery/DSC_0085.jpg",
-                            "color": "bordo"
-                        },
-                        {
-                            "source": "images/gallery/DSC_0087.jpg",
+                            "source": "assets/images/products/mlynek_tempo_porcellana_4.jpg",
                             "color": "natural"
                         },
                         {
-                            "source": "images/gallery/DSC_0091.jpg",
+                            "source": "assets/images/products/mlynek_tempo_porcellana_5.jpg",
+                            "color": "natural"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_tempo_porcellana_8jpg",
                             "color": "orange"
                         },
                         {
-                            "source": "images/gallery/DSC_0118.jpg",
-                            "color": "bordo"
+                            "source": "assets/images/products/mlynek_tempo_porcellana_9.jpg",
+                            "color": "green"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_tempo_porcellana_10.jpg",
+                            "color": "green"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_tempo_porcellana_11.jpg",
+                            "color": "green"
                         }
                     ]
                 },
@@ -79,12 +87,32 @@
                 "description_short": "Młynek do pieprzu i soli w komplecie",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0076.jpg",
+                        "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
                         "color": "brown"
                     },
                     "all": [
                         {
-                            "source": "images/gallery/DSC_0080.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
                             "color": "brown"
                         }
                     ]
@@ -103,25 +131,125 @@
                     "ceramics": [
                         "A1",
                         "A2",
-                        "A15",
-                        "K2",
-                        "K8"
+                        "A3",
+                        "A4",
+                        "C1",
+                        "C2",
+                        "C3",
+                        "C4",
+                        "C5",
+                        "C6",
+                        "C7",
+                        "C8",
+                        "C9"
                     ]
                 }
             },
             {
                 "tag": "sol",
-                "name": "Młynek do soli",
-                "name_short": "Młynek do soli",
+                "name": "Młynek do solu porcelanowy",
+                "name_short": "Młynek do solu porcelanowy",
                 "category": "Młynki wysokie",
-                "description_long": "Młynek do soli sprawdza się w kuchni i w salonie. Jest funkcjonalny i ładny dzięki ręcznie zdobionej ceramice",
+                "description_long": "Młynek do solu wysoki porcelanowy produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na sol wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
                 "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0115.jpg",
+                        "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
                         "color": "brown"
                     },
-                    "all": []
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Srebrny"
+                    ],
+                    "ceramics": [
+                        "A1",
+                        "A2",
+                        "A3",
+                        "A4",
+                        "C1",
+                        "C2",
+                        "C3",
+                        "C4",
+                        "C5",
+                        "C6",
+                        "C7",
+                        "C8",
+                        "C9"
+                    ]
+                }
+            },
+            {
+                "tag": "pieprz",
+                "name": "Młynek do pieprzu porcelanowy",
+                "name_short": "Młynek do pieprzu porcelanowy",
+                "category": "Młynki wysokie",
+                "description_long": "Młynek do pieprzu wysoki porcelanowy produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
+                "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
+                "images": {
+                    "main": {
+                        "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
+                        "color": "brown"
+                    },
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
+                            "color": "brown"
+                        }
+                    ]
                 },
                 "materials": {
                     "wood": [
@@ -156,14 +284,19 @@
                 "name": "Młynek do pieprzu",
                 "name_short": "Młynek do pieprzu",
                 "category": "Młynki wysokie",
-                "description_long": "Młynek do pieprzu wysoki porcelanowy produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
+                "description_long": "Młynek do pieprzu wysoki produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
                 "description_short": "Młynek do soli jest świetnym narzędziem w kuchni",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0115.jpg",
+                        "source": "assets/images/products/mlynek_coperto_1.jpg",
                         "color": "brown"
                     },
-                    "all": []
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_coperto_1.jpg",
+                            "color": "brown"
+                        }
+                    ]
                 },
                 "materials": {
                     "wood": [
@@ -176,21 +309,7 @@
                     "metal": [
                         "Srebrny"
                     ],
-                    "ceramics": [
-                        "A1",
-                        "A2",
-                        "A3",
-                        "A4",
-                        "C1",
-                        "C2",
-                        "C3",
-                        "C4",
-                        "C5",
-                        "C6",
-                        "C7",
-                        "C8",
-                        "C9"
-                    ]
+                    "ceramics": []
                 }
             },
             {
@@ -202,17 +321,29 @@
                 "description_short": "Świetnie wykonany młynek który sprawdzi się jako ozdoba do salonu i pomoc w kuchni",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0105.jpg",
+                        "source": "assets/images/products/mlynek_coperto_1.jpg",
                         "color": "brown"
                     },
                     "all": [
                         {
-                            "source": "images/gallery/DSC_0121.jpg",
+                            "source": "assets/images/products/mlynek_coperto_1.jpg",
                             "color": "brown"
                         },
                         {
-                            "source": "images/gallery/DSC_0161.jpg",
-                            "color": "bordo"
+                            "source": "assets/images/products/mlynek_coperto_2.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_coperto_3.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_coperto_4.jpg",
+                            "color": "orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_coperto_5.jpg",
+                            "color": "brown"
                         }
                     ]
                 },
@@ -247,24 +378,20 @@
             },
             {
                 "tag": "babuni",
-                "name": "Młynek do kawy Babuni",
+                "name": "Młynek Babuni",
                 "name_short": "Młynek Babuni",
                 "category": "Młynki do kawy",
                 "description_long": "Młynek Babuni jest wyposażony w otwarty zasobnik na kawę oraz drewnianą szufladkę na zmieloną kawę.",
                 "description_short": "Produkowany jest w sześciu podstawowych kolorach drewna, natomiast elementy metalowe mogą być w dwóch kolorystykach.",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0105.jpg",
-                        "color": "brown"
+                        "source": "assets/images/products/mlynek_babuni_1.jpg",
+                        "color": "natural"
                     },
                     "all": [
                         {
-                            "source": "images/gallery/DSC_0121.jpg",
-                            "color": "brown"
-                        },
-                        {
-                            "source": "images/gallery/DSC_0161.jpg",
-                            "color": "bordo"
+                            "source": "assets/images/products/mlynek_babuni_1.jpg",
+                            "color": "natural"
                         }
                     ]
                 },
@@ -280,21 +407,7 @@
                         "Czarny",
                         "Złoty"
                     ],
-                    "ceramics": [
-                        "A1",
-                        "A2",
-                        "A3",
-                        "A4",
-                        "C1",
-                        "C2",
-                        "C3",
-                        "C4",
-                        "C5",
-                        "C6",
-                        "C7",
-                        "C8",
-                        "C9"
-                    ]
+                    "ceramics": []
                 }
             },
             {
@@ -306,10 +419,23 @@
                 "description_short": "Świetnie wykonany młynek",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0146.jpg",
-                        "color": "green"
+                        "source": "assets/images/products/mlynek_cubo_1.jpg",
+                        "color": "brown"
                     },
-                    "all": []
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_cubo_1.jpg",
+                            "color": "brown"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_cubo_2.jpg",
+                            "color": "green"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_cubo_3.jpg",
+                            "color": "green"
+                        }
+                    ]
                 },
                 "materials": {
                     "wood": [
@@ -323,21 +449,7 @@
                         "Czarny",
                         "Złoty"
                     ],
-                    "ceramics": [
-                        "A1",
-                        "A2",
-                        "A3",
-                        "A4",
-                        "C1",
-                        "C2",
-                        "C3",
-                        "C4",
-                        "C5",
-                        "C6",
-                        "C7",
-                        "C8",
-                        "C9"
-                    ]
+                    "ceramics": []
                 }
             },
             {
@@ -349,10 +461,19 @@
                 "description_short": "Świetnie wykonany młynek",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0172.jpg",
-                        "color": "bordo"
+                        "source": "assets/images/products/mlynek_muro_1.jpg",
+                        "color": "natural"
                     },
-                    "all": []
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_muro_1.jpg",
+                            "color": "natural"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_muro_2.jpg",
+                            "color": "orange"
+                        }
+                    ]
                 },
                 "materials": {
                     "wood": [
@@ -391,10 +512,19 @@
                 "description_short": "Świetnie wykonany młynek",
                 "images": {
                     "main": {
-                        "source": "images/gallery/DSC_0172.jpg",
-                        "color": "bordo"
+                        "source": "assets/images/products/mlynek_retro_1.jpg",
+                        "color": "orange"
                     },
-                    "all": []
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_retro_1.jpg",
+                            "color": "orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_retro_2.jpg",
+                            "color": "orange"
+                        }
+                    ]
                 },
                 "materials": {
                     "wood": [
@@ -407,21 +537,7 @@
                     "metal": [
                         "Żeliwo"
                     ],
-                    "ceramics": [
-                        "A1",
-                        "A2",
-                        "A3",
-                        "A4",
-                        "C1",
-                        "C2",
-                        "C3",
-                        "C4",
-                        "C5",
-                        "C6",
-                        "C7",
-                        "C8",
-                        "C9"
-                    ]
+                    "ceramics": []
                 }
             }
         ],

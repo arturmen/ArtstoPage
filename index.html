@@ -423,13 +423,6 @@
 							</div>
 						</div>
 
-						<div>
-							<div id="target-name">Loading...</div>
-							<script type="x-tmpl-mustache" id="template-example-name">
-								Test Mustache library {{ name }}!
-							</script>
-						</div>
-
 						<!-- TODO FIXME center it -->
 						<div class="container topmargin-lg clearfix" id="target-client-list">
 						</div>
@@ -571,15 +564,6 @@
 		}
 
 		function renderTemplates(content) {
-			// TODO remove (wiktor)
-			console.log(content)
-
-			// render name
-			var template = $('#template-example-name').html();
-			Mustache.parse(template);
-			var rendered = Mustache.render(template, { name: "Artur" });
-			$('#target-name').html(rendered);
-
 			// render specific lists on the page
 			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood));
 			renderList('#template-ceramics-list', '#target-ceramics-list', dictToList(content.materials.ceramics));
