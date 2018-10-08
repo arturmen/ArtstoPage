@@ -180,8 +180,8 @@
 
 									<script type="text/template" id="template-product-images">
 										{{#images}}
-											<div class="slide" data-thumb="{{source}}"><a href="{{source}}" title="Młynek Klepsydra"
-												data-lightbox="gallery-item"><img src="{{source}}" alt="Młynek Klepsydra"></a></div>
+											<div class="slide" data-thumb="{{source}}"><a href="{{source}}" title="{{color}}"
+												data-lightbox="gallery-item"><img src="{{source}}" alt="{{color}}"></a></div>
 										{{/images}}
 									</script>
 								</div>
@@ -425,7 +425,7 @@
 
 
 	<script>
-		
+
 		function renderList(templateTag, targetTag, itemsList, itemsProductList) {
 			// TODO(artur) make it cleaner (maybe use dictionary instead of list)
 			var list = [];
