@@ -265,14 +265,20 @@
 	<script src="js/utils.js"></script>
 
 	<script>
-		function getProductFilters(product) {
+		function getProductFilters(product, color) {
 			var fs = []
 
 			fs.push(filterifyName(product.category))
 			fs.push(filterifyName(product.name))
 
-			for (var idx in product.materials.wood) {
-				color = product.materials.wood[idx]
+			if (typeof color === "undefined") {
+				console.log(color)
+				for (var idx in product.materials.wood) {
+					color = product.materials.wood[idx]
+					fs.push(filterifyName(color))
+				}
+			} else {
+				console.log(color)
 				fs.push(filterifyName(color))
 			}
 
@@ -318,25 +324,34 @@
 				})
 			}
 
-			console.log(filters)
-
 			var rendered = Mustache.render(template, { "filters": filters });
-
 			$('#target-product-filters').html(rendered);
 			$('#target-product-filters li:first').addClass('activeFilter');
 
+			// TODO (wiktor) maybe group by color? TBD
+			var productInstances = []
+
 			// render gallery items
 			var products = content.products
-			for (var idx in products) {
-				var p = products[idx];
-				p["pf-filters"] = getProductFilters(p).join(" ");
-				p["images_all"] = filterGalleryImages(p.images.all);
-				p["name_url"] = sanitazeName(p.name);
+			for (var productIdx in products) {
+				var p = products[productIdx];
+
+				var imagesForGallery = filterGalleryImages(p.images.all)
+				for (imageIdx in imagesForGallery) {
+					var copy = jQuery.extend(true, {}, p);
+					var image = imagesForGallery[imageIdx]
+
+					copy["pf-filters"] = getProductFilters(p, image.color).join(" ");
+					copy["images_all"] = [image];
+					copy["name_url"] = sanitazeName(p.name);
+
+					productInstances.push(copy)
+				}
 			}
 
 			var template = $('#template-gallery-items').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "products": products });
+			var rendered = Mustache.render(template, { "products": productInstances });
 			$('#target-gallery-items').html(rendered);
 
 			var el = $('.portfolio-overlay a:first');
