@@ -296,6 +296,35 @@
                 }
             },
             {
+                "name": "Młynek Beczułka",
+                "name_short": "Młynek Beczułka",
+                "category": "Młynki do pieprzu",
+                "description_long": "Młynek do pieprzu Beczułka produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wydrążony jest w korpusie drewnianym młynka.",
+                "description_short": "Młynek do pieprzu jest świetnym narzędziem w kazdej kuchni",
+                "images": {
+                    "main_idx": 0,
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_beczulka_1.jpg",
+                            "color": "Naturalny"
+                        }
+                    ]
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Srebrny"
+                    ],
+                    "ceramics": []
+                }
+            },
+            {
                 "name": "Młynek do kawy Zakryty",
                 "name_short": "Młynek Zakryty",
                 "category": "Młynki do kawy",
