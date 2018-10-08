@@ -8,7 +8,6 @@
         ],
         "products": [
             {
-                "tag": "klepsydra",
                 "name": "Młynek do kawy Klepsydra",
                 "name_short": "Młynek Klepsydra",
                 "category": "Młynki do kawy",
@@ -79,7 +78,6 @@
                 }
             },
             {
-                "tag": "kompletPS",
                 "name": "Młynki do Pieprzu i Soli - komplet",
                 "name_short": "Młynek Pieprz Sól",
                 "category": "Młynki do pieprzu",
@@ -143,7 +141,6 @@
                 }
             },
             {
-                "tag": "sol",
                 "name": "Młynek do solu porcelanowy",
                 "name_short": "Młynek do solu porcelanowy",
                 "category": "Młynki do soli",
@@ -207,7 +204,6 @@
                 }
             },
             {
-                "tag": "pieprz",
                 "name": "Młynek do pieprzu porcelanowy",
                 "name_short": "Młynek do pieprzu porcelanowy",
                 "category": "Młynki do pieprzu",
@@ -271,7 +267,6 @@
                 }
             },
             {
-                "tag": "pieprz",
                 "name": "Młynek do pieprzu",
                 "name_short": "Młynek do pieprzu",
                 "category": "Młynki do pieprzu",
@@ -301,7 +296,6 @@
                 }
             },
             {
-                "tag": "zakryty",
                 "name": "Młynek do kawy Zakryty",
                 "name_short": "Młynek Zakryty",
                 "category": "Młynki do kawy",
@@ -364,7 +358,6 @@
                 }
             },
             {
-                "tag": "babuni",
                 "name": "Młynek Babuni",
                 "name_short": "Młynek Babuni",
                 "category": "Młynki do kawy",
@@ -395,7 +388,6 @@
                 }
             },
             {
-                "tag": "kawa",
                 "name": "Młynek do kawy",
                 "name_short": "Młynek do kawy",
                 "category": "Młynki do kawy",
@@ -435,7 +427,6 @@
                 }
             },
             {
-                "tag": "scienny",
                 "name": "Młynek do kawy ścienny",
                 "name_short": "Młynek ścienny",
                 "category": "Młynki do kawy",
@@ -483,7 +474,6 @@
                 }
             },
             {
-                "tag": "retro",
                 "name": "Młynek do kawy Retro",
                 "name_short": "Młynek Retro",
                 "category": "Młynki do kawy",
