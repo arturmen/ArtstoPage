@@ -13,4 +13,3 @@ gsutil -m rsync -d -r -x '\.git.*' ArtstoPage gs://artsto-preview
 
 # preview page at the link below
 # http://storage.googleapis.com/artsto-preview/index.html
-
