@@ -128,38 +128,29 @@
 
 		<!-- Page Title
 		============================================= -->
-
-
 		<section id="page-title">
-
 			<div class="container clearfix">
 				<h1>
-					<!-- <script>
-				
-				var name = window.location.search.split('=')[1]
-				document.write('Młynek do kawy - ' + name)
-				
-				</script>  -->
-
 					<div>
 						<div id="target-name"></div>
 						<p>
-							<script type="x-tmpl-mustache" id="template-product-name">
+							<script type="text/template" id="template-product-name">
 								{{name}}
 							</script>
 						</p>
 					</div>
-
-
-
 				</h1>
 
-				<div id="portfolio-navigation">
-					<!-- mozna by tu zrobić przesuwanie po produktach -->
-					<a href="#"><i class="icon-angle-left"></i></a>
-					<a href="#"><i class="icon-line-grid"></i></a>
-					<a href="#"><i class="icon-angle-right"></i></a>
+				<div id="target-portfolio-navigator">
 				</div>
+
+				<script type="text/template" id="template-portfolio-navigator">
+					<div id="portfolio-navigation">
+						<a href="product.html?name={{prev}}"><i class="icon-angle-left"></i></a>
+						<a href="{{up}}"><i class="icon-line-grid"></i></a>
+						<a href="product.html?name={{next}}"><i class="icon-angle-right"></i></a>
+					</div>				
+				</script>
 			</div>
 
 		</section><!-- #page-title end -->
@@ -462,19 +453,29 @@
 			$('#target-related-portfolio').html(rendered);
 		}
 
+		function getProductIdx(prods, productSelection) {
+			var idx = 0;
+			for (var cidx in prods) {
+				if (productSelection === sanitazeName(prods[cidx].name)) {
+					idx = parseInt(cidx);
+					break;
+				}
+			}
+			return idx;
+		}
+
 		function renderProductPage(content) {
 			var url = new URL(window.location.href);
 			var productSelection = url.searchParams.get("name");
 
-			var index = 0
-			for (var idx in content.products) {
-				if (productSelection === sanitazeName(content.products[idx].name)) {
-					index = idx;
-					break;
-				}
-			}
+			var prods = content.products
+			var idx = getProductIdx(prods, productSelection)
 
-			var prod = content.products[index]
+			var nProds = prods.length
+			var prevIdx = ((idx - 1) + nProds) % nProds
+			var nextIdx = ((idx + 1)) % nProds
+
+			var prod = prods[idx]
 
 			var template = $('#template-product-description-long').html();
 			Mustache.parse(template);
@@ -490,6 +491,15 @@
 			Mustache.parse(template);
 			var rendered = Mustache.render(template, { "name": prod.name });
 			$('#target-name').html(rendered);
+
+			var template = $('#template-portfolio-navigator').html();
+			Mustache.parse(template);
+			var rendered = Mustache.render(template, {
+				"next": sanitazeName(prods[nextIdx].name),
+				"prev": sanitazeName(prods[prevIdx].name),
+				"up": "gallery.html"
+			});
+			$('#target-portfolio-navigator').html(rendered);
 
 			var template = $('#template-product-images').html();
 			Mustache.parse(template);
