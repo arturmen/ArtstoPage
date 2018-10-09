@@ -272,13 +272,11 @@
 			fs.push(filterifyName(product.name))
 
 			if (typeof color === "undefined") {
-				console.log(color)
 				for (var idx in product.materials.wood) {
 					color = product.materials.wood[idx]
 					fs.push(filterifyName(color))
 				}
 			} else {
-				console.log(color)
 				fs.push(filterifyName(color))
 			}
 
