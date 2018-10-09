@@ -292,7 +292,7 @@
 
 					<!-- Related Portfolio Items
 					============================================= -->
-					<h4>Inne produkty:</h4>
+					<h4>Zobacz również nasze pozostałe produkty:</h4>
 
 					<!-- TODO IMPLEMENT(wiktor)
 					
@@ -302,45 +302,35 @@
 					
 					-->
 
-					<div id="related-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="20" data-nav="false"
-					 data-autoplay="5000" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-xl="4">
-						<div class="oc-item">
-							<div class="iportfolio">
-								<div class="portfolio-image">
-									<a href="portfolio-single.html">
-										<img src="assets/images/products/mlynek_tempo_porcellana_1.jpg" alt="">
-									</a>
-									<div class="portfolio-overlay">
-										<a href="assets/images/products/mlynek_tempo_porcellana_1.jpg" class="left-icon" data-lightbox="image"><i
-											 class="icon-line-stack-2"></i></a>
-										<a href="product.html?name=klepsydra&color=green" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-									</div>
-								</div>
-								<div class="portfolio-desc">
-									<h3><a href="product.html?name=klepsydra&color=green">Młynek Klepsydra</a></h3>
-									<span><a href="product.html?name=klepsydra&color=green">Zielony</a>
-								</div>
-							</div>
-						</div>
-						<div class="oc-item">
-							<div class="iportfolio">
-								<div class="portfolio-image">
-									<a href="portfolio-single.html">
-										<img src="assets/images/products/mlynek_alto_porcellana_2.jpg" alt="Locked Steel Gate">
-									</a>
-									<div class="portfolio-overlay">
-										<a href="assets/images/products/mlynek_alto_porcellana_2.jpg"" class=" left-icon" data-lightbox="image"><i
-											 class="icon-line-stack-2"></i></a>
-										<a href="product.html?name=kompletPS" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-									</div>
-								</div>
-								<div class="portfolio-desc">
-									<h3><a href="product.html?name=kompletPS&color=brown">Młynki do pieprzu i soli</a></h3>
-									<span><a href="product.html?name=kompletPS&color=brown">Brązowy</a></span>
-								</div>
-							</div>
-						</div>
+					<div id="target-related-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="20"
+					 data-nav="false" data-autoplay="5000" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-xl="4">
+
+						<!-- This div is populated using Mustache -->
+
 					</div><!-- .portfolio-carousel end -->
+
+					<script type="text/template" id="template-related-portfolio">
+						{{#products}}
+						<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<a href="portfolio-single.html">
+										<img src="{{image_src}}" alt="">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="{{image_src}}" class="left-icon" data-lightbox="image"><i
+											 class="icon-line-stack-2"></i></a>
+										<a href="product.html?name={{name_url}}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="product.html?name={{name_url}}">{{name}}</a></h3>
+									<span><a href="product.html?name={{name_url}}">{{description_short}}</a>
+								</div>
+							</div>
+						</div>
+						{{/products}}
+					</script>
 				</div>
 			</div>
 
@@ -448,6 +438,30 @@
 			});
 		}
 
+		function renderRelatedProducts(content, skipProductTag) {
+			var products = []
+			for (var productIdx in content.products) {
+				var prod = content.products[productIdx];
+
+				var prodTag = sanitazeName(prod.name)
+				if (prodTag === skipProductTag) {
+					continue
+				}
+
+				var image = prod.images[0]
+				var image = getRandomElement(filterGalleryImages(prod.images.all))
+				prod["image_src"] = image.source
+				prod["image_color"] = image.color
+				prod["name_url"] = sanitazeName(prod.name);
+				products.push(prod)
+			}
+
+			var template = $('#template-related-portfolio').html();
+			Mustache.parse(template);
+			var rendered = Mustache.render(template, { "products": products });
+			$('#target-related-portfolio').html(rendered);
+		}
+
 		function renderProductPage(content) {
 			var url = new URL(window.location.href);
 			var productSelection = url.searchParams.get("name");
@@ -481,6 +495,8 @@
 			Mustache.parse(template);
 			var rendered = Mustache.render(template, { "images": filterGalleryImages(prod.images.all) });
 			$('#target-product-images-list').html(rendered);
+
+			renderRelatedProducts(content, productSelection)
 
 			// render specific lists on the page
 			renderList('#template-wood-list', '#target-wood-list', dictToList(content.materials.wood), prod.materials.wood);

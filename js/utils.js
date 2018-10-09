@@ -1,3 +1,6 @@
+function getRandomElement(arr) {
+    return arr[Math.floor((Math.random() * arr.length))];
+}
 
 function sanitazeName(str) {
     return str.replace(/[^a-z0-9]/gi, '').toLowerCase();
