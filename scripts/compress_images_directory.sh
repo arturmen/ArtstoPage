@@ -1,16 +1,19 @@
 #!/bin/bash
 
 args=("$@")
+dst=${args[0]}
 
-src=${args[0]}
-dst=${args[1]}
+tmp_resized_dir=/tmp/resized
 
-IMG_SIZE=250k
+# step 1 - resizing and compression
+rm -rf ${tmp_resized_dir}
+mkdir -p ${tmp_resized_dir}
+mogrify -path ${tmp_resized_dir} -filter lanczos2 -resize '1000x1000>' -quality 90 *.jpg
+ls ${tmp_resized_dir}
 
-# step 1
-# resize to 1000
+# step 2 - image optimization
+img_size=250k
 
-# step 2
 mkdir -p $dst
-jpegoptim $src/*.jpg --size=$IMG_SIZE --dest=$dst
-jpegoptim $src/*.png --size=$IMG_SIZE --dest=$dst
+jpegoptim ${tmp_resized_dir}/*.jpg --size=$img_size --dest=$dst
+jpegoptim ${tmp_resized_dir}/*.png --size=$img_size --dest=$dst
