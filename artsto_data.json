@@ -87,27 +87,47 @@
                     "main_idx": 0,
                     "all": [
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_2.jpg",
                             "color": "Brązowy"
                         },
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_3.jpg",
+                            "color": "Orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_4.jpg",
                             "color": "Brązowy"
                         },
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_5.jpg",
                             "color": "Brązowy"
                         },
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_6.jpg",
+                            "color": "Naturalny"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_7.jpg",
+                            "color": "Orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_8.jpg",
                             "color": "Brązowy"
                         },
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
-                            "color": "Brązowy"
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_9.jpg",
+                            "color": "Orange"
                         },
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_10.jpg",
+                            "color": "Naturalny"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_11.jpg",
+                            "color": "Orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_komplet_12.jpg",
                             "color": "Brązowy"
                         }
                     ]
