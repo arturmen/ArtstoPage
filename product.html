@@ -129,29 +129,17 @@
 		<!-- Page Title
 		============================================= -->
 		<section id="page-title">
-			<div class="container clearfix">
-				<h1>
-					<div>
-						<div id="target-name"></div>
-						<p>
-							<script type="text/template" id="template-product-name">
-								{{name}}
-							</script>
-						</p>
-					</div>
-				</h1>
+			<div id="target-product-title" class="container clearfix">
+			</div>
 
-				<div id="target-portfolio-navigator">
-				</div>
-
-				<script type="text/template" id="template-portfolio-navigator">
-					<div id="portfolio-navigation">
+			<script type="text/template" id="template-product-title">
+				<h1 id="target-name" >{{name}}</h1>
+				<div id="portfolio-navigation">
 						<a href="product.html?name={{prev}}"><i class="icon-angle-left"></i></a>
 						<a href="{{up}}"><i class="icon-line-grid"></i></a>
 						<a href="product.html?name={{next}}"><i class="icon-angle-right"></i></a>
-					</div>				
-				</script>
-			</div>
+				</div>				
+			</script>
 
 		</section><!-- #page-title end -->
 
@@ -487,19 +475,15 @@
 			var rendered = Mustache.render(template, { "description-short": prod.description_short });
 			$('#target-description-short').html(rendered);
 
-			var template = $('#template-product-name').html();
-			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "name": prod.name });
-			$('#target-name').html(rendered);
-
-			var template = $('#template-portfolio-navigator').html();
+			var template = $('#template-product-title').html();
 			Mustache.parse(template);
 			var rendered = Mustache.render(template, {
+				"name": prod.name,
 				"next": sanitazeName(prods[nextIdx].name),
 				"prev": sanitazeName(prods[prevIdx].name),
 				"up": "gallery.html"
 			});
-			$('#target-portfolio-navigator').html(rendered);
+			$('#target-product-title').html(rendered);
 
 			var template = $('#template-product-images').html();
 			Mustache.parse(template);
