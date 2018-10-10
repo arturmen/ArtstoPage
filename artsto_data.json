@@ -78,6 +78,46 @@
                 }
             },
             {
+                "name": "Młynek do kawy Klepsydra szklany",
+                "name_short": "Młynek Klepsydra szklany",
+                "category": "Młynki do kawy",
+                "description_long": "Nasz młynek składa się z wielu wysokiej jakości komponentów. Szkło sprowadzana jest z ..... Metal z zaprzyjaźnionej firmy, a drewno dostarczamy my. Młynek dostępny jest w wielu wariantach",
+                "description_short": "Świetnie wykonany młynek. Flagowiec wśród naszych młynków",
+                "images": {
+                    "main_idx": 0,
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_tempo_vetro_2.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_tempo_vetro_3.jpg",
+                            "color": "Zielony",
+                            "gallery": false
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_tempo_vetro_4.jpg",
+                            "color": "Naturalny"
+                        }
+                    ]
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Czarny",
+                        "Złoty"
+                    ],
+                    "ceramics": [
+                    ]
+                }
+            },
+            {
                 "name": "Młynki do Pieprzu i Soli - komplet",
                 "name_short": "Młynek Pieprz Sól",
                 "category": "Młynki do pieprzu",
@@ -129,6 +169,30 @@
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_12.jpg",
                             "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
+                            "color": "Brązowy"
                         }
                     ]
                 },
@@ -170,27 +234,7 @@
                     "main_idx": 0,
                     "all": [
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_7.jpg",
                             "color": "Brązowy"
                         }
                     ]
@@ -233,27 +277,7 @@
                     "main_idx": 0,
                     "all": [
                         {
-                            "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
-                            "color": "Brązowy"
-                        },
-                        {
-                            "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
+                            "source": "assets/images/products/mlynek_alto_porcellana_7.jpg",
                             "color": "Brązowy"
                         }
                     ]
@@ -296,8 +320,37 @@
                     "main_idx": 0,
                     "all": [
                         {
-                            "source": "assets/images/products/mlynek_alto_1.jpg",
+                            "source": "assets/images/products/mlynek_alto_2.jpg",
                             "color": "Brązowy"
+                        }
+                    ]
+                },
+                "materials": {
+                    "wood": [
+                        "Bordowy",
+                        "Zielony",
+                        "Naturalny",
+                        "Orange",
+                        "Brązowy"
+                    ],
+                    "metal": [
+                        "Srebrny"
+                    ],
+                    "ceramics": []
+                }
+            },
+            {
+                "name": "Młynek do pieprzu szklany",
+                "name_short": "Młynek do pieprzu szklany",
+                "category": "Młynki do pieprzu",
+                "description_long": "Młynek do pieprzu wysoki szklany produkowany jest na podstawie tradycyjnego wzoru. Zasobnik na pieprz wykonany ręcznie z ceramiki. Gałka drewniana zamykająca zasobnik jest jednocześnie pokrętłem do mielenia pieprzu.",
+                "description_short": "Młynek do pieprzu jest świetnym narzędziem w kuchni",
+                "images": {
+                    "main_idx": 0,
+                    "all": [
+                        {
+                            "source": "assets/images/products/mlynek_alto_vetro_1.jpg",
+                            "color": "Naturalny"
                         }
                     ]
                 },
@@ -374,6 +427,10 @@
                         {
                             "source": "assets/images/products/mlynek_coperto_5.jpg",
                             "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_coperto_6.jpg",
+                            "color": "Brązowy"
                         }
                     ]
                 },
@@ -416,7 +473,24 @@
                     "main_idx": 0,
                     "all": [
                         {
-                            "source": "assets/images/products/mlynek_babuni_1.jpg",
+                            "source": "assets/images/products/mlynek_babuni_2.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_babuni_3.jpg",
+                            "color": "Brązowy",
+                            "gallery": false
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_babuni_4.jpg",
+                            "color": "Orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_babuni_5.jpg",
+                            "color": "Naturalny"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_babuni_6.jpg",
                             "color": "Naturalny"
                         }
                     ]
@@ -457,6 +531,19 @@
                             "source": "assets/images/products/mlynek_cubo_3.jpg",
                             "color": "Zielony",
                             "gallery": false
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_cubo_4.jpg",
+                            "color": "Brązowy",
+                            "gallery": false
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_cubo_5.jpg",
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_cubo_6.jpg",
+                            "color": "Brązowy"
                         }
                     ]
                 },
@@ -491,6 +578,14 @@
                         {
                             "source": "assets/images/products/mlynek_muro_2.jpg",
                             "color": "Orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_muro_4.jpg",
+                            "color": "Orange"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_muro_5.jpg",
+                            "color": "Naturalny"
                         }
                     ]
                 },
@@ -533,11 +628,21 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_retro_1.jpg",
-                            "color": "Orange"
+                            "color": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_2.jpg",
-                            "color": "Orange"
+                            "color": "Brązowy"
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_retro_3.jpg",
+                            "color": "Brązowy",
+                            "gallery": false
+                        },
+                        {
+                            "source": "assets/images/products/mlynek_retro_4.jpg",
+                            "color": "Brązowy",
+                            "gallery": false
                         }
                     ]
                 },

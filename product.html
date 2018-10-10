@@ -503,7 +503,7 @@
 
 			var template = $('#template-product-images').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "images": filterGalleryImages(prod.images.all) });
+			var rendered = Mustache.render(template, { "images": prod.images.all });
 			$('#target-product-images-list').html(rendered);
 
 			renderRelatedProducts(content, productSelection)
