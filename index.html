@@ -14,14 +14,15 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 
 	<!-- inserting a favicon using realfavicongenerator -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5b93d5">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5b93d5">
 	<meta name="msapplication-TileColor" content="#b91d47">
 	<meta name="theme-color" content="#ffffff">
 	<!-- / -->
+
 
 	<!-- One Page Module Specific Stylesheet -->
 	<link rel="stylesheet" href="onepage.css" type="text/css" />
@@ -103,9 +104,9 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo/logo-artsto-light.png"><img src="images/logo/logo-artsto-dark.png"
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-Artsto33.png"><img src="images/logo-Artsto44.png"
 							 alt="Artsto Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo/logo-artsto-light.png"><img src="images/logo/logo-artsto-dark.png"
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-Artsto33.png"><img src="images/logo-Artsto44.png"
 							 alt="Artsto Logo"></a>
 					</div><!-- #logo end -->
 
@@ -429,25 +430,17 @@
 							</script>
 						</div>
 
-						<!-- TODO FIXME(wiktor) center it -->
+						<!-- TODO FIXME center it -->
 						<div class="container topmargin-lg clearfix" id="target-client-list">
 						</div>
 
 						<script type="text/template" id="template-client-list">
-							<!-- TODO FIXME(wiktor) For some reasong it doesn't work after deployement (I guess JS stuff fails) -->
-							<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 25px;">Poznaj firmy, które nam zaufały.</h2>
-							<img src="images/clients/logo_herbaty_swiata.jpg" alt="Herbaty Świata" width="150">
-							<img src="images/clients/logo_piotr_i_pawel.jpg" alt="Piotr i Paweł" width="150">
-							<img src="images/clients/logo_herbaty_swiata.jpg" alt="Herbaty Świata" width="150">
-							<img src="images/clients/logo_piotr_i_pawel.jpg" alt="Piotr i Paweł" width="150">
-							
-							<div class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80" 
-								data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3"
-							 	data-items-md="4" data-items-lg="5" data-items-xl="6">
+							<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 25px;">Nasi klienci</h2>
+							<div class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80"
+							 data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3"
+							 data-items-md="4" data-items-lg="5" data-items-xl="6">
 								{{#items}}
-								<div class="oc-item">
-									<img src="{{logo}}" alt="{{name}}"/>
-								</div>
+								<div class="oc-item"><a href="#"><img src="{{logo}}" alt="{{name}}"></a></div>
 								{{/items}}
 							</div>
 						</script>
@@ -599,6 +592,7 @@
 			renderTemplates(data.content)
 		});
 	</script>
+
 
 	<script>
 
