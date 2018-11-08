@@ -159,8 +159,11 @@
 
 									<script type="text/template" id="template-product-images">
 										{{#images}}
-											<div class="slide" data-thumb="{{source}}"><a href="{{source}}" title="{{color}}"
-												data-lightbox="gallery-item"><img src="{{source}}" alt="{{color}}"></a></div>
+											<div class="slide" data-thumb="{{source_thumbnail}}">
+												<a href="{{source}}" title="{{color}}" data-lightbox="gallery-item">
+													<img src="{{source}}" alt="{{color}}">
+												</a>
+											</div>
 										{{/images}}
 									</script>
 								</div>
@@ -360,7 +363,7 @@
 
 			<div id="copyrights">
 				<div class="container center clearfix">
-					Copyright Artsto 2018 | All Rights Reserved
+					Copyright © Artsto 2018 | Wszystkie prawa zastrzeżone
 				</div>
 			</div>
 
@@ -452,6 +455,14 @@
 			return idx;
 		}
 
+		function toThumbnails(images, ext) {
+			for (var idx in images) {
+				var fname = images[idx].source
+				images[idx]["source_thumbnail"] = fname.replace('products', 'products/thumbnail')
+			}
+			return images;
+		}
+
 		function renderProductPage(content) {
 			var url = new URL(window.location.href);
 			var productSelection = url.searchParams.get("name");
@@ -487,7 +498,7 @@
 
 			var template = $('#template-product-images').html();
 			Mustache.parse(template);
-			var rendered = Mustache.render(template, { "images": prod.images.all });
+			var rendered = Mustache.render(template, { "images": toThumbnails(prod.images.all, 'jpg') });
 			$('#target-product-images-list').html(rendered);
 
 			renderRelatedProducts(content, productSelection)

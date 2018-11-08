@@ -2888,8 +2888,8 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 .flex-control-nav.flex-control-thumbs li,
 .flex-control-nav.flex-control-thumbs li img {
 	display: block;
-	width: 100px !important;
-	height: auto !important;
+	width: auto !important;
+	height: 100px !important;
 }
 
 .flex-control-nav.flex-control-thumbs li:hover img,
