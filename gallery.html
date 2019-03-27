@@ -10,18 +10,18 @@
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet"
 	 type="text/css" />
-	<link rel="stylesheet" href="bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 
 	<!-- One Page Module Specific Stylesheet -->
-	<link rel="stylesheet" href="onepage.css" type="text/css" />
+	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
 	<!-- / -->
 
-	<link rel="stylesheet" href="dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
-	<link rel="stylesheet" href="animate.css" type="text/css" />
-	<link rel="stylesheet" href="magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
 
@@ -35,7 +35,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- / -->
 
-	<link rel="stylesheet" href="responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 	<!-- Document Title
@@ -358,7 +358,7 @@
 			el.addClass('left-icon');
 		}
 
-		$.getJSON("artsto_data.json", function (data) {
+		$.getJSON("data/artsto_data.json", function (data) {
 			// Parses pseudo-database JSON file and calls the rendering of elements in the HTML file
 			renderTemplates(data.content)
 		});
